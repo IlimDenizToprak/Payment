@@ -25,8 +25,6 @@ class CheckMinute extends Controller
                     ->whereNotIn('id', FailedTransactions::pluck('user_id'))
                     ->get();
 
-        print_r($finduser);
-
         foreach ($finduser as $user) {
             $service = app(PaycellService::class)->payment_process($user);
 

@@ -20,8 +20,6 @@ class SendSms
         $result = curl_exec($url);
         $result = json_decode($result);
 
-        print_r($result);
-
         SaveLog::save_log('Send Sms', 'Informational Message Has Been Sent. Number: '.$user->phone.'', 'Success', $ip, $failed_user_id);
     }
 }
