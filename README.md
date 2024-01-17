@@ -1,6 +1,6 @@
 <h3>-Mia Teknoloji Abonelik Sistemi Kurulum Aşamaları-</h3>
 <p>1-Boş bir klasör açın ve editörünüz ile bu klasöre giriş yapın</p>
-<p>2-Editörün terminalini açın ve "git clone https://github.com/IlimDenizToprak/Payment.git." komutunu çalıştırarak projeyi bilgisayarınıza kopyalayın.</p>
+<p>2-Editörün terminalini açın ve "git clone https://github.com/IlimDenizToprak/Payment.git ." komutunu çalıştırarak projeyi bilgisayarınıza kopyalayın.</p>
 <p>3-Proje kurulduktan sonra composer install yaparak "vendor" dosyasını kurun, eğer bu adımı yaptığınızda "vendor" klasörünü göremiyorsanız proje düzgün çalışmayacaktır</p>
 <p>4-Veri tabanını kurmak için ".env" adlı dosyadaki veritabanı bilgileri ile local sunucuda bir veritabanı oluşturun vt adı: payment k.adı: root şifre: YOK</p>
 <p>5-Veritabanı oluştuktan sonra tabloları kurmak için "php artisan migrate" komutunu çalıştırın ve bu oluşturduğunuz veritabanının içerisinde tabloları oluşturun</p>

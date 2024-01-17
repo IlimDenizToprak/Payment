@@ -18,7 +18,7 @@ class PayCellService
         //BU KART BİLGİLERİ İLE PAYCELL'E İSTEKTE BULUNDUĞUMUZU VARSAYIYORUM VE 1'DEN 100'E KADAR RASTGELE SAYI TUTUYORUZ.
         //EĞER GELEN SAYI 20'DEN KÜÇÜKSE BAŞARISIZ, 20'DEN BÜYÜKSE BAŞARILI OLDUĞUNU VARSAYIYORUZ.
 
-        $random = rand(0, 15);
+        $random = rand(0, 100);
 
         if ($random <= 20) {
             $payment_status = 0;

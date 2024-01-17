@@ -173,6 +173,32 @@
                         </div>
                     </div>
                 </div>
+                <div id="infobox2" class="col-xl-12 col-lg-12 layout-spacing">
+                    <div class="statbox widget box box-shadow">
+                        <div class="widget-content widget-content-area text-center">
+                            <h3 class="mb-4">Döküman Yazıldıktan Sonra Değiştirilen Yerler</h3>
+                           <div class="row">
+                            <div class="col-lg-6">
+                                <div class="infobox-2">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                    </div>
+                                    <p class="info-text">Eğer bir abone FailedTransaction tablosuna düştüyse 2 gün daha süresi oluyordu fakat dakikalık çalışan corunumuz her çalıştığında bu kullanıcıyı tekrardan FailedTransactions tablosuna yazdığı için kullanıcıya birçok kez sms gidecekti bunun önüne geçildi eğer müşteri zaten TransActions tablosundaysa tekrardan o kullanıcının işlemi bitene kadar yazılmıyor.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="infobox-2">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                    </div>
+                                    <p class="info-text">Arka tarafta çalışan 2 cron mevcuttur. Bir corn her dakika aboneliği dolan üyenin olup olmadığını sorgular. Bu her dakika çalışan cron aboneliği dolan birisini bulduğunda ödeme işlemi için PayCellService dosyasına giderek kullanıcının kart bilgileri ile ödeme isteğinde bulunur. Bu isteğin sonucunda eğer ödeme başarılı ise abonenin aylık periyodu devam edecek şekilde tarihler güncellenir. Fakat ödeme işlemi başarısız ise bu üye FailedTransactions adlı tabloya taşınır ve bu saatten sonra iş diğer cronundur.</p>
+                                    <p class="info-text">2. cronun görevi ise her gün 1 kere çalışmak üzere tasarlanmıştır. Bu cron FailedTransactions adlı tabloya giderek orda bulunan ve deneme sayıları henüz 3 e ulaşmamış aboneleri bularak onları tekrar ödeme işlemine yönlendirmektir. Eğer bu ödeme metodundan başarılı bir şekilde sonuç alınırsa üyenin periyodu devam ettirilir. Fakat başarısız olursa son olarak ertesi gün tekrar denenir. Eğer son denemede de sonuç başarılıysa önceki durumlar gibi periyot devam eder, fakat başarısız olursa bu kez hem üyenin durumu pasife çekilir hem de SMS gönderme metodu olan SendSms metoduna giderek kullanıcının hesabının pasif olduğunu kullanıcıya bildirir.</p>
+                                </div>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="footer-wrapper">
                 <div class="footer-section f-section-1">
