@@ -12,7 +12,13 @@ Bu proje, Mia Teknoloji'nin abonelik sistemini kurmak için kullanılan bir uygu
    ```
 
 2. **Composer Kurulumu:**
-   Proje klasörüne gidin ve terminalinize aşağıdaki komutu yazarak gerekli Composer paketlerini kurun:
+   Proje klasörüne
+   
+   ```bash
+   cd /klasor_yolu
+   ```
+
+   komutu ile gidin ve terminalinize aşağıdaki komutu yazarak gerekli Composer paketlerini kurun:
 
    ```bash
    composer install
