@@ -15,7 +15,7 @@ Bu proje, Mia Teknoloji'nin abonelik sistemini kurmak için kullanılan bir uygu
    Proje klasörüne
    
    ```bash
-   cd /klasor_yolu
+   cd /Payment
    ```
 
    komutu ile gidin ve terminalinize aşağıdaki komutu yazarak gerekli Composer paketlerini kurun:
