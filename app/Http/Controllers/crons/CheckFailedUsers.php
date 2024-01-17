@@ -56,6 +56,11 @@ class CheckFailedUsers extends Controller
 
                     SaveLog::save_log('Change Account Status', 'The Account Has Been Deactivated Due To Non-Payment.', 'Error', $ip, $find_failed_user->id);
                     SendSms::send_message($failed_user->id, $ip);
+
+                    $failed_user_delete = FailedTransactions::find($failed_user->id);
+                    $failed_user_delete->delete();
+
+                    SaveLog::save_log('Delete Failed Users Info', 'Failed User Information Deletion', 'Success', $ip, $find_failed_user->id);
                 }
             }
         }

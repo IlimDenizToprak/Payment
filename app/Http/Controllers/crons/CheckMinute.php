@@ -21,7 +21,9 @@ class CheckMinute extends Controller
         $now = Carbon::now();
         $oneHourLater = $now->addHour(1);
 
-        $finduser = User::where('end_date', '<=', $oneHourLater)->get();
+        $finduser = User::where('end_date', '<=', $oneHourLater)
+                    ->whereNotIn('id', FailedTransactions::pluck('user_id'))
+                    ->get();
 
         print_r($finduser);
 
