@@ -81,6 +81,7 @@
                                     </div>
                                 </div>
                                 <div class="alert alert-dark mb-4" role="alert">Tasarım için Bootstrap ile hazırlanmış hazır bir template kullanımıştır. Projenin genelinde LARAVEL kütüphanesi kullanılmıştır.</div>
+                                <div class="alert alert-dark mb-4" role="alert"><iframe width="100%" height="315" src="https://www.youtube.com/embed/UcckauZ-ltM?si=5oNMxv1ECzvP8VBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                                 <div class="alert alert-primary mb-4" role="alert"><span style="color:red">Sol Tarafta bulunan menülerin görevleri</span> <br>
                                     <span style="color:red">All Users:</span> Bütün müşterileri listelemeye, abonelikleri ve abonelik durumları hakkında bilgiler verir <br>
                                     <span style="color:red">Failed Transactions:</span> İlk seferde ödemesi <strong>ALINAMAYAN</strong> üyeleri ve kaç kere çekim denemesi yapıldığı hakkında bilgi verir. <br>
@@ -159,7 +160,7 @@
                                     <img style="width:100%; height:auto; border-radius:20px" src="admin/img/checkfailedusers.jpg">
                                 </div>
                             </div>
-                            <div class="col-lg-12">
+                            <div class="col-lg-6">
                                 <div class="infobox-2">
                                     <div class="info-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
@@ -167,6 +168,16 @@
                                     <h5 class="info-heading">app\Services\PayCellService.php</h5>
                                     <p class="info-text">PayCell entegrasyonu gibi davranarak %20 ihtimalle başarısız, %80 ihtimalle başarılı ödeme sonucu döndürür böylelikle senaryoyu gerçek hayata benzetir.</p>
                                     <img style="width:100%; height:auto; border-radius:20px" src="admin/img/paycell.jpg">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="infobox-2">
+                                    <div class="info-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                    </div>
+                                    <h5 class="info-heading">Gelen SMS</h5>
+                                    <p class="info-text">Ankara Toplu Sms Entegrasyonu kullanılarak SMS gönderme işlemi yapıldı Gerçek hesap kullanılarak yapılan bir işlemdir.</p>
+                                    <img style="width:100%; height:auto; border-radius:20px" src="admin/img/ss.jpg">
                                 </div>
                             </div>
                            </div>
@@ -178,21 +189,12 @@
                         <div class="widget-content widget-content-area text-center">
                             <h3 class="mb-4">Döküman Yazıldıktan Sonra Değiştirilen Yerler</h3>
                            <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <div class="infobox-2">
                                     <div class="info-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                                     </div>
                                     <p class="info-text">Eğer bir abone FailedTransaction tablosuna düştüyse 2 gün daha süresi oluyordu fakat dakikalık çalışan corunumuz her çalıştığında bu kullanıcıyı tekrardan FailedTransactions tablosuna yazdığı için kullanıcıya birçok kez sms gidecekti bunun önüne geçildi eğer müşteri zaten TransActions tablosundaysa tekrardan o kullanıcının işlemi bitene kadar yazılmıyor.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="infobox-2">
-                                    <div class="info-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                                    </div>
-                                    <p class="info-text">Arka tarafta çalışan 2 cron mevcuttur. Bir corn her dakika aboneliği dolan üyenin olup olmadığını sorgular. Bu her dakika çalışan cron aboneliği dolan birisini bulduğunda ödeme işlemi için PayCellService dosyasına giderek kullanıcının kart bilgileri ile ödeme isteğinde bulunur. Bu isteğin sonucunda eğer ödeme başarılı ise abonenin aylık periyodu devam edecek şekilde tarihler güncellenir. Fakat ödeme işlemi başarısız ise bu üye FailedTransactions adlı tabloya taşınır ve bu saatten sonra iş diğer cronundur.</p>
-                                    <p class="info-text">2. cronun görevi ise her gün 1 kere çalışmak üzere tasarlanmıştır. Bu cron FailedTransactions adlı tabloya giderek orda bulunan ve deneme sayıları henüz 3 e ulaşmamış aboneleri bularak onları tekrar ödeme işlemine yönlendirmektir. Eğer bu ödeme metodundan başarılı bir şekilde sonuç alınırsa üyenin periyodu devam ettirilir. Fakat başarısız olursa son olarak ertesi gün tekrar denenir. Eğer son denemede de sonuç başarılıysa önceki durumlar gibi periyot devam eder, fakat başarısız olursa bu kez hem üyenin durumu pasife çekilir hem de SMS gönderme metodu olan SendSms metoduna giderek kullanıcının hesabının pasif olduğunu kullanıcıya bildirir.</p>
                                 </div>
                             </div>
                            </div>
